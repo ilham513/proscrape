@@ -1,4 +1,4 @@
-<?
+<? error_reporting(E_ERROR);//DISABLE ERROR
 $url = $_GET['url'];
 // echo $url;
 
@@ -117,9 +117,11 @@ foreach($main->find('img') as $element) {
 		<br/>
 		</div>
 		
+		<!--
 		<div style="text-align: center;"><h2>Hayuu Cek, Mumpung Lagi Promo!</h2>
 		<a href="https://ilham513.github.io/sweeter-murah.html"><img src="http://tiny.cc/banner-513"/></a>
 		</div>
+		-->
 	</div>
 	
 	<script>
@@ -143,7 +145,7 @@ foreach($main->find('img') as $element) {
 
 	// Usage!
 	sleep(500).then(() => {
-		// x[2].src = 'https://i.postimg.cc/C1ZyRJSk/image.png';
+		x[2].src = 'https://i.postimg.cc/C1ZyRJSk/image.png';
 		x[n].src = 'https://i.postimg.cc/C1ZyRJSk/image.png';
 	});
 	
