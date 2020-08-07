@@ -43,7 +43,7 @@ foreach($main->find('img') as $element) {
 </head>
 
 <body>
-	<div class="jumbotron"><h1><? echo ucwords("$title"); ?></h1><br/><br/>
+	<div class="jumbotron"><h1><? echo strtoupper("$title"); ?></h1><br/><br/>
 	<? echo $main->find('img', 0); ?>
 	<h2 style="color:green;">
 	Halo para Kaskuser. Kembali lagi bersama saya, <u>ilham513</u>, yang selalu menyuguhkan informasi <u>menarik dan unik</u> setiap harinya <u>Untuk Anda</u>.
