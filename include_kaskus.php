@@ -1,11 +1,8 @@
 <br/>.<br/>.<br/>.<br/>.
 <center>
-<h1 style="color: red;"><strong>THREAT INI KERAMEAN, huhu.</strong></h1>
-<p><strong><img src="https://i.postimg.cc/yYR35N9m/image.png" alt="" width="578" height="171" /></strong></p>
-<h1 style="color: red;"><strong>WEBSITE SAYA SAMPE JEBOL!</strong></h1>
-<p><img src="https://i.postimg.cc/fb8VXSnN/image.png" alt="" width="816" height="355" /></p>
-<h1 style="color: green;"><strong>Makasih banget Lho Buat Yang Udah Ngeshare Ke Media Sosial Kalian!</strong></h1>
-<p><strong><img src="https://i.postimg.cc/fR97cNML/image.png" alt="" width="1235" height="359" /></strong></p>
+<h1 style="color: red;"><strong>JANGAN LUPA FOLLOW KASKUS SAYA!</strong></h1>
+<p><strong><img src="https://i.postimg.cc/3R7z0NdM/image.png" alt="" width="578" height="171" /></strong></p>
+<h1 style="color: green;"><strong>KARENA FOLLOW ITU GRATIS! GAK ADA RUGINYA. DENGAN ITU KAMU MEMBANTU SAYA UNTUK MEMBUAT KONTEN YANG LEBIH MANRIK LAGI!1!</strong></h1>
 </center>
 <br/>.<br/>.<br/>.<br/>.
 
@@ -22,9 +19,9 @@
 		<br/>.
 		<br/>.
 		<br/>.
-		<h2>2 Komentar Terbaik Minggu Ini (Update!)</h2>
-		<img src="http://tiny.cc/komentar-kaskus-terbaik"/><br/>
-		<img src="https://i.postimg.cc/KYZBSyr0/KASKUS.png"/><br/>
+		<h2>Komentar Terbaik Minggu Ini (Update!)</h2>
+		<img src="http://tiny.cc/komentar-kaskus-terbaik"/><br/>.
+		<img src="https://i.postimg.cc/KYZBSyr0/KASKUS.png"/><br/>.
 		</center>
 		
 		<br/>

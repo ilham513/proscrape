@@ -45,11 +45,7 @@ foreach($main->find('img') as $element) {
 <body>
 	<div class="jumbotron"><h1><? echo strtoupper("$title"); ?></h1><br/><br/>
 	<? echo $main->find('img', 0); ?>
-	<h2 style="color:green;">
-	Halo para Kaskuser. Kembali lagi bersama saya, <u>ilham513</u>, yang selalu menyuguhkan informasi <u>menarik dan unik</u> setiap harinya <u>Untuk Anda</u>.
-	<img src="https://bantuan.kaskus.co.id/hc/article_attachments/115007024568/smilies_fbeqyos6i5nk.gif"/>
-	</h2> 
-
+	<? include_once('../include_kaskus_header.php') ?>
 	<br/><br/>
 		<? echo $main; ?>
 		<br/><br/>Referensi <a href="<?echo $url?>">Matalelaki.com</a>.
