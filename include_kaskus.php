@@ -1,7 +1,7 @@
 <br/>.<br/>.<br/>.<br/>.
 <center>
 <h1 style="color: red;"><strong>JANGAN LUPA FOLLOW KASKUS SAYA!</strong></h1>
-<p><strong><img src="https://i.postimg.cc/3R7z0NdM/image.png" alt="" width="578" height="171" /></strong></p>
+<p><strong><img src="https://i.postimg.cc/3R7z0NdM/image.png" /></strong></p>
 <h1 style="color: green;"><strong>KARENA FOLLOW ITU GRATIS! GAK ADA RUGINYA. DENGAN ITU KAMU MEMBANTU SAYA UNTUK MEMBUAT KONTEN YANG LEBIH MANRIK LAGI!1!</strong></h1>
 </center>
 <br/>.<br/>.<br/>.<br/>.

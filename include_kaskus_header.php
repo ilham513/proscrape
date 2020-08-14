@@ -9,8 +9,6 @@
 <center>
 <h1 style="color: red;"><strong>SELAMA 7 TAHUN JADI TS KASKUS, BARU KALI INI BISA NYAMPE 100K PENGUNJUNG! --huhu.</strong></h1>
 <p><strong><img src="https://i.postimg.cc/yYR35N9m/image.png" alt="" width="578" height="171" /></strong></p>
-<h1 style="color: red;"><strong>WEBSITE SAYA SAMPE JEBOL!</strong></h1>
-<p><img src="https://i.postimg.cc/fb8VXSnN/image.png" alt="" width="816" height="355" /></p>
 <h1 style="color: green;"><strong>Makasih banget Lho Buat Yang Udah Ngeshare Ke Media Sosial Kalian!</strong></h1>
 <p><strong><img src="https://i.postimg.cc/fR97cNML/image.png" alt="" width="1235" height="359" /></strong></p>
 </center>
