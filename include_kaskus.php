@@ -1,34 +1,23 @@
-<br/>.<br/>.<br/>.<br/>.
 <center>
 <h1 style="color: red;"><strong>JANGAN LUPA FOLLOW KASKUS SAYA!</strong></h1>
 <p><strong><img src="https://i.postimg.cc/3R7z0NdM/image.png" /></strong></p>
 <h1 style="color: green;"><strong>KARENA FOLLOW ITU GRATIS! GAK ADA RUGINYA. DENGAN ITU KAMU MEMBANTU SAYA UNTUK MEMBUAT KONTEN YANG LEBIH MANRIK LAGI!1!</strong></h1>
 </center>
-<br/>.<br/>.<br/>.<br/>.
+<br/>.
 
-		
 		<div style="text-align: right;">
 		<h1 style="color:DodgerBlue;">Sekali Lagi, Terima Kasih Sudah Mampir Ke Trit Sederhana Ini! Jangan Lupa Berkomentar.</h1><br/>
 		<h2 style="color:red;"> (Karena Komentar Kalian Semangat Saya Untuk Terus Update!) </h2><br/>
-		<img id="img-tar" src="#"/><br/>.<br/>.<br/>.<br/>..<br/>.<br/>.<br/>.
+		<img id="img-tar" src="#"/><br/>.
 		
 		
 		<center>
 		<br/>.
 		<img src="http://1.bp.blogspot.com/-3fNvSDsZ_9s/VNQ4gxcJ0bI/AAAAAAAADHo/v0oKPVICj7E/s1600/sayembara-cari-pacar.jpg"/>
 		<br/>.
-		<br/>.
-		<br/>.
 		<h2>Komentar Terbaik Minggu Ini (Update!)</h2>
-		<img src="http://tiny.cc/komentar-kaskus-terbaik"/><br/>.
-		<img src="https://i.postimg.cc/KYZBSyr0/KASKUS.png"/><br/>.
-		</center>
-		
-		<br/>
-				
-		<br/>.
-		<br/>.
-		<br/>.				
+		<img src="https://i.postimg.cc/KYZBSyr0/KASKUS.png"/>
+		</center>				
 		<br/>.
 		<br/>.
 		<br/>.
@@ -59,9 +48,3 @@
 		<br/>.<br/>.<br/>.
 		<h2><a href="<?echo $ts_link[2]?>" class="kaskus"><?echo $ts_jdl[2]?></a></h2>
 		<a href="<?echo $ts_link[2]?>" class="kaskus"><img src="<?echo $ts_img[2]?>"/></a>
-		
-		<br/>.
-		<br/>.
-		<br/>.
-
-
