@@ -1,13 +1,12 @@
 <center>
 <h1 style="color: red;"><strong>JANGAN LUPA FOLLOW KASKUS SAYA!</strong></h1>
 <p><strong><img src="https://i.postimg.cc/3R7z0NdM/image.png" /></strong></p>
-<h1 style="color: green;"><strong>KARENA FOLLOW ITU GRATIS! GAK ADA RUGINYA. DENGAN ITU KAMU MEMBANTU SAYA UNTUK MEMBUAT KONTEN YANG LEBIH MANRIK LAGI!1!</strong></h1>
+<h1 style="color: green;"><strong>KARENA FOLLOW ITU GRATIS! GAK ADA RUGINYA. KAMU MEMBANTU SAYA MEMBUAT KONTEN YANG LEBIH JOSS LAGI!</strong></h1>
 </center>
-<br/>.
 
 		<div style="text-align: right;">
-		<h1 style="color:DodgerBlue;">Sekali Lagi, Terima Kasih Sudah Mampir Ke Trit Sederhana Ini! Jangan Lupa Berkomentar.</h1><br/>
-		<h2 style="color:red;"> (Karena Komentar Kalian Semangat Saya Untuk Terus Update!) </h2><br/>
+		<h1 style="color:DodgerBlue;">Terima Kasih Sudah Mampir Ke Trit Sederhana Ini! Jangan Lupa Berkomentar.</h1><br/>
+		<h2 style="color:red;"> (KARENA Komentar Kalian Semangat Saya Untuk Terus Update!) </h2><br/>
 		<img id="img-tar" src="#"/><br/>.
 		
 		
@@ -18,8 +17,6 @@
 		<h2>Komentar Terbaik Minggu Ini (Update!)</h2>
 		<img src="https://i.postimg.cc/KYZBSyr0/KASKUS.png"/>
 		</center>				
-		<br/>.
-		<br/>.
 		<br/>.
 		
 		<?
@@ -37,14 +34,14 @@
 		
 		<h2><img src="https://bantuan.kaskus.co.id/hc/article_attachments/115007171267/smilies_fber17aocqul.gif"/> --- Wajib Baca Trit Ini Juga --- <img src="https://bantuan.kaskus.co.id/hc/article_attachments/115007171267/smilies_fber17aocqul.gif"/></h2>
 		
-		<br/>.<br/>.<br/>.
+		<br/>.<br/>.
 		<h2><a href="<?echo $ts_link[0]?>" class="kaskus"><?echo $ts_jdl[0]?></a></h2>
 		<a href="<?echo $ts_link[0]?>" class="kaskus"><img src="<?echo $ts_img[0]?>"/></a>
 		
-		<br/>.<br/>.<br/>.
+		<br/>.<br/>.
 		<h2><a href="<?echo $ts_link[1]?>" class="kaskus"><?echo $ts_jdl[1]?></a></h2>
 		<a href="<?echo $ts_link[1]?>" class="kaskus"><img src="<?echo $ts_img[1]?>"/></a>
 		
-		<br/>.<br/>.<br/>.
+		<br/>.<br/>.
 		<h2><a href="<?echo $ts_link[2]?>" class="kaskus"><?echo $ts_jdl[2]?></a></h2>
 		<a href="<?echo $ts_link[2]?>" class="kaskus"><img src="<?echo $ts_img[2]?>"/></a>
