@@ -32,7 +32,7 @@
 			}
 
 			foreach($html->find('a[target=_self]') as $element) {
-				echo $element."<br/>";
+				echo $element."<hr/>";
 			}
 		?>
 		</div>
@@ -56,7 +56,7 @@
 			}
 
 			foreach($html->find('a[target=_self]') as $element) {
-				echo $element."<br/>";
+				echo $element."<hr/>";
 			}
 		?>
 		</div>
