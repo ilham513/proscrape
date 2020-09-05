@@ -1,26 +1,10 @@
-<center>
-<h1 style="color: red;"><strong>JANGAN LUPA FOLLOW KASKUS SAYA!</strong></h1>
-<p><strong><img src="https://i.postimg.cc/3R7z0NdM/image.png" /></strong></p>
-<h1 style="color: green;"><strong>KARENA FOLLOW ITU GRATIS! GAK ADA RUGINYA. KAMU MEMBANTU SAYA MEMBUAT KONTEN YANG LEBIH JOSS LAGI!</strong></h1>
-</center>
-
 		<div style="text-align: right;">
-		<h1 style="color:DodgerBlue;">Terima Kasih Sudah Mampir Ke Trit Sederhana Ini! Jangan Lupa Berkomentar.</h1><br/>
-		<h2 style="color:red;"> (KARENA Komentar Kalian Semangat Saya Untuk Terus Update!) </h2><br/>
+		<h1 style="color:red;">Terima Kasih Sudah Mampir. Jangan Lupa Berkomentar!</h1><br/>
+		<h2 style="color:gold;"> KARENA Komentar Kalian Semangat Saya Untuk Terus Update! </h2><br/>
 		<img id="img-tar" src="#"/><br/>.
-		
-		
-		<center>
-		<br/>.
-		<img src="http://1.bp.blogspot.com/-3fNvSDsZ_9s/VNQ4gxcJ0bI/AAAAAAAADHo/v0oKPVICj7E/s1600/sayembara-cari-pacar.jpg"/>
-		<br/>.
-		<h2>Komentar Terbaik Minggu Ini (Update!)</h2>
-		<img src="https://i.postimg.cc/KYZBSyr0/KASKUS.png"/>
-		</center>				
-		<br/>.
-		
+				
 		<?
-		$ts = file_get_html("https://www.kaskus.co.id/@ilham513/viewallthreads");
+		$ts = file_get_html("https://www.kaskus.co.id/@kadal404/viewallthreads");
 		  
 		foreach($ts->find('img') as $element) {
 			if(substr($element->src,0,21)=='https://dl.kaskus.id/'){
@@ -32,7 +16,7 @@
 
 		?>
 		
-		<h2><img src="https://bantuan.kaskus.co.id/hc/article_attachments/115007171267/smilies_fber17aocqul.gif"/> --- Wajib Baca Trit Ini Juga --- <img src="https://bantuan.kaskus.co.id/hc/article_attachments/115007171267/smilies_fber17aocqul.gif"/></h2>
+		<h2><img src="https://bantuan.kaskus.co.id/hc/article_attachments/115007021608/smilies_fb5ly1j43vv5.gif"/> ==== Wajib Baca Threat Ini Juga! ==== <img src="https://bantuan.kaskus.co.id/hc/article_attachments/115007021608/smilies_fb5ly1j43vv5.gif"/></h2>
 		
 		<br/>.<br/>.
 		<h2><a href="<?echo $ts_link[0]?>" class="kaskus"><?echo $ts_jdl[0]?></a></h2>

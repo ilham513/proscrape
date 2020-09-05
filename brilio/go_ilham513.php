@@ -48,7 +48,7 @@ foreach($main->find('img') as $element) {
 	<? include_once('../include_kaskus_header.php') ?>
 	<br/><br/>
 		<? echo $main; ?>
-		<br/><br/>Sumber Referensi <a href="<?echo $url?>">Brilio</a>.
+		<br/><br/>Referensi <a href="<?echo $url?>">Brilio</a>.
 		<br/>.<br/>.<br/>.<br/>
 		<? include_once('../include_kaskus.php') ?>
 		</div>
@@ -80,8 +80,8 @@ foreach($main->find('img') as $element) {
 
 	// Usage!
 	sleep(500).then(() => {
-		//x[2].src = 'https://i.postimg.cc/C1ZyRJSk/image.png';
-		x[n].src = 'https://i.postimg.cc/m2KVkMhP/image.png';
+		x[2].src = 'https://i.postimg.cc/C1ZyRJSk/image.png';
+		x[n].src = 'https://i.postimg.cc/C1ZyRJSk/image.png';
 	});
 	
 	$( "p" ).append( "<br/><br/>" );
@@ -89,9 +89,11 @@ foreach($main->find('img') as $element) {
 	$('.multipage-itembreak').remove();
 	
 	var greetings = [
-	"https://i.postimg.cc/Gp9b3ZfP/bwee.gif",
-	"https://i.postimg.cc/3x8KVyCc/clingg.gif",
-	"https://i.postimg.cc/K80Z2Z0v/gif-thumb-up.gif"
+	"https://i.postimg.cc/x1gDSrSc/Angry.gif",
+	"https://i.postimg.cc/7Z3dMFLK/fuwa-fuwa.gif",
+	"https://i.postimg.cc/Vsb80HXV/huwaaa.gif",
+	"https://i.postimg.cc/zGk5XbTD/kyaaaa.gif",
+	"https://i.postimg.cc/DzZVvC25/zettai.gif"
 	];
 	
 	var greeting_id = Math.floor(Math.random() * greetings.length);
