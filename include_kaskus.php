@@ -1,10 +1,13 @@
+[youtube]4uJIu4E1V0Q[/youtube]
+
+
 		<div style="text-align: right;">
 		<h1 style="color:red;">Terima Kasih Sudah Mampir. Jangan Lupa Berkomentar!</h1><br/>
 		<h2 style="color:gold;"> KARENA Komentar Kalian Semangat Saya Untuk Terus Update! </h2><br/>
 		<img id="img-tar" src="#"/><br/>.
 				
 		<?
-		$ts = file_get_html("https://www.kaskus.co.id/@kadal404/viewallthreads");
+		$ts = file_get_html("https://www.kaskus.co.id/@ilham513/viewallthreads");
 		  
 		foreach($ts->find('img') as $element) {
 			if(substr($element->src,0,21)=='https://dl.kaskus.id/'){

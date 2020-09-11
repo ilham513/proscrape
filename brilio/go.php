@@ -81,10 +81,30 @@ foreach($main->find('img') as $element) {
 	// Usage!
 	sleep(500).then(() => {
 		//x[2].src = 'https://i.postimg.cc/C1ZyRJSk/image.png';
-		x[n].src = 'https://i.postimg.cc/m2KVkMhP/image.png';
+		//x[n].src = 'https://i.postimg.cc/m2KVkMhP/image.png';
 	});
 	
+	fetch("https://www.instagram.com/sheva.my.id/?__a=1")
+	  .then((res) => res.json())
+	  .then((data) => {
+		const res = data;
+		console.log(res.graphql.user.edge_owner_to_timeline_media.edges[0].node.shortcode);
+		
+		var y0 = "https://www.instagram.com/p/" + res.graphql.user.edge_owner_to_timeline_media.edges[0].node.shortcode;
+		var y1 = "https://www.instagram.com/p/" + res.graphql.user.edge_owner_to_timeline_media.edges[1].node.shortcode;
+		var y2 = "https://www.instagram.com/p/" + res.graphql.user.edge_owner_to_timeline_media.edges[2].node.shortcode;
+		var y3 = "https://www.instagram.com/p/" + res.graphql.user.edge_owner_to_timeline_media.edges[3].node.shortcode;
+		
+		$( "p" ).eq(1).append( "[INSTAGRAM]"+y0+"[/INSTAGRAM]" );
+		$( "p" ).eq(2).append( "[INSTAGRAM]"+y1+"[/INSTAGRAM]" );
+		$( "p" ).eq(-1).append( "[INSTAGRAM]"+y2+"[/INSTAGRAM]" );
+		$( "p" ).eq(-2).append( "[INSTAGRAM]"+y3+"[/INSTAGRAM]" );
+	  });
+
+
+	
 	$( "p" ).append( "<br/><br/>" );
+	
 	
 	$('.multipage-itembreak').remove();
 	
