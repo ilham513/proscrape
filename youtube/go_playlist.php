@@ -19,24 +19,16 @@ $i = 0;
 
 echo "<p><center><img src='https://i.ytimg.com/vi/". substr($xml->entry->id,9) . "/hqdefault.jpg'/></center></p>";
 
-//random array function you can use or write your own
-function acak_pembuka(){
-	$pembuka = array(
-	"Alhamdulilah, salam sejahtera untuk kita semua karena pada saat ini kita masih bisa hidup dan diberikan kenikmatan mendengar, melihat dan merasakan. Sungguh suatu karunia yang sangat besar dari tuhan yang diberikan kepada kita. Untuk itu mari kita sama-sama untuk selalu senantiasa bersyukur atas segala nikmat yang mulia ini."
-	,"Selamat datang, salam bagi kita semua. Semoga tuhan selalu melimpahkan kasih sayangnya pada kita semua disini. Hari ini disini ijin kan saya memperkenalkan diri saya terlebih dahulu. Karena pepatah orang tua mengatakan tak kenal maka tak sayang. Perkenalkan saya Setia Ballmer akan membagikan informasi menarik untuk hari ini."
-	,"Assalamualaikum warahmatullahi wabarakatuh, puji syukur ke hadirat allah sebagaimana sampai hari ini kita masih diberi kesehatan. Di hari yang berbahagia ini harapan saya kita semua dapat terus menuntut berbagi kebahagiaan untuk kehidupan yang lebih baik."
-	,"Para hadirin yang senantiasa bersyukur dan dirahmati allah, semoga tuhan selalu melimpahkan kebaikan kepada kita semua. Hari ini saya kembali mempoting trit yang unik untuk kalian.");
-	
-	return $pembuka[array_rand($pembuka)];
-}
   
 //echo pembuka
-echo "<h2 color='green'>".acak_pembuka()."</h2><br/>";
+echo "<h2 color='green' id='pembuka'></h2><br/>";
 echo "<p>Langsung aja ya, sesuai judul saya akan membagian seperti yang di bawah ini: </p><br/><br/>";
 
 foreach($xml->entry as $entry){
 	$i += 1;
-	echo "<br/><br/><strong>$i. " . substr($entry->title,0,-37) . "</strong>"; 
+	$title = str_replace(" | Klip Anime Lucu (Link di Deskripsi)","",$entry->title);
+	$title = str_replace(" Klip Anime Sub Indo Link di Deskripsi","",$title);
+	echo "<br/><br/><strong>$i. " . $title . "</strong>"; 
 	echo "<p><center> [youtube]". substr($entry->id,9) ."[/youtube] <br/>Sumber Youtube.com</center> </p><br/><br/>";
 }
 
@@ -56,20 +48,42 @@ foreach($ts->find('img') as $element) {
 
 ?>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-		<h2><img src="https://bantuan.kaskus.co.id/hc/article_attachments/115007021608/smilies_fb5ly1j43vv5.gif"/> -=- Harus Baca Ini Juga! =-= <img src="https://bantuan.kaskus.co.id/hc/article_attachments/115007021608/smilies_fb5ly1j43vv5.gif"/></h2>
+
+		<h2><img src="https://bantuan.kaskus.co.id/hc/article_attachments/115007021608/smilies_fb5ly1j43vv5.gif"/>[size=7] -=- Harus Baca Ini Juga! =-= [/size]<img src="https://bantuan.kaskus.co.id/hc/article_attachments/115007021608/smilies_fb5ly1j43vv5.gif"/></h2>
 		
-		<br/>.<br/>.
-		<strong><a href="<?echo $ts_link[0]?>" class="kaskus"><?echo $ts_jdl[0]?></a></strong><br/>.
-		<a href="<?echo $ts_link[0]?>" class="kaskus"><img src="<?echo $ts_img[0]?>"/></a>
+		<br/>.<br/>.<br/>
+		[size=7][url=<?echo $ts_link[0]?>]<?echo $ts_jdl[0]?>[/url][/size]<br/>
+		<img src="<?echo $ts_img[0]?>"/></a>
 		
-		<br/>.<br/>.
-		<strong><a href="<?echo $ts_link[1]?>" class="kaskus"><?echo $ts_jdl[1]?></a></strong><br/>.
-		<a href="<?echo $ts_link[1]?>" class="kaskus"><img src="<?echo $ts_img[1]?>"/></a>
+		<br/>.<br/>.<br/>
+		[size=7][url=<?echo $ts_link[0]?>]<?echo $ts_jdl[0]?>[/url][/size]<br/>
+		<img src="<?echo $ts_img[0]?>"/></a>
 		
-		<br/>.<br/>.
-		<strong><a href="<?echo $ts_link[2]?>" class="kaskus"><?echo $ts_jdl[2]?></a></strong><br/>.
-		<a href="<?echo $ts_link[2]?>" class="kaskus"><img src="<?echo $ts_img[2]?>"/></a>		
-		<br/>.<br/>.
-		<strong><a href="<?echo $ts_link[3]?>" class="kaskus"><?echo $ts_jdl[3]?></a></strong><br/>.
-		<a href="<?echo $ts_link[3]?>" class="kaskus"><img src="<?echo $ts_img[3]?>"/></a>
+		<br/>.<br/>.<br/>
+		[size=7][url=<?echo $ts_link[0]?>]<?echo $ts_jdl[0]?>[/url][/size]<br/>
+		<img src="<?echo $ts_img[0]?>"/></a>
+		
+		<br/>.<br/>.<br/>
+		[size=7][url=<?echo $ts_link[0]?>]<?echo $ts_jdl[0]?>[/url][/size]<br/>
+		<img src="<?echo $ts_img[0]?>"/></a>
+		
+<script>		
+var answers = [
+  "Hey para Kaskuser, Selamat datang di Threat Saya yang sederhana dan menawan ini. Jika kalian terhibur jangan lupa kasih CENDOL dan SHARE ke teman kalian. Terima Kasih ^_^",
+  "Hey para Kaskuser, Selamat datang di Threat Saya yang Good Joss dan menawan ini. Jika kalian terhibur jangan lupa kasih CENDOL dan SHARE ke teman kalian. Terima Kasih ^_^",
+  "Howdy para Kaskuser, Selamat datang di Threat Ane yang Simple dan menawan ini. Jika kalian terhibur jangan lupa kasih CENDOL dan SHARE ke Friend kalian. Terima Kasih ^_^",
+  "Howdy para Kaskuser, Selamat datang di Threat Saya yang sederhana dan menawan ini. Jika kalian terhibur jangan lupa kasih CENDOL dan SHARE ke teman kalian. Terima Kasih ^_^",
+  "Hello para Kaskuser, Selamat datang di Threat Aku yang sederhana dan menawan ini. Jika kalian terhibur jangan lupa kasih CENDOL dan SHARE ke teman kalian. Terima Kasih ^_^",
+  "Wotcha",
+  "Alright para Kaskuser, Selamat datang di Threat Saya yang sederhana dan menawan ini. Jika kalian terhibur jangan lupa kasih CENDOL dan SHARE ke teman kalian. Terima Kasih ^_^",
+  "Alright para Kaskuser, Welcome to my Threat yang sederhana dan menawan ini. Jika kalian terhibur jangan lupa kasih CENDOL dan SHARE ke teman kalian. Terima Kasih ^_^"
+]
+
+var randomAnswer = answers[Math.floor(Math.random() * answers.length)];
+
+console.log(randomAnswer);
+$( "#pembuka" ).append( randomAnswer );
+</script>
+		
