@@ -58,16 +58,16 @@ foreach($ts->find('img') as $element) {
 		<img src="<?echo $ts_img[0]?>"/></a>
 		
 		<br/>.<br/>.<br/>
-		[size=7][url=<?echo $ts_link[0]?>]<?echo $ts_jdl[0]?>[/url][/size]<br/>
-		<img src="<?echo $ts_img[0]?>"/></a>
+		[size=7][url=<?echo $ts_link[1]?>]<?echo $ts_jdl[1]?>[/url][/size]<br/>
+		<img src="<?echo $ts_img[1]?>"/></a>
 		
 		<br/>.<br/>.<br/>
-		[size=7][url=<?echo $ts_link[0]?>]<?echo $ts_jdl[0]?>[/url][/size]<br/>
-		<img src="<?echo $ts_img[0]?>"/></a>
+		[size=7][url=<?echo $ts_link[2]?>]<?echo $ts_jdl[2]?>[/url][/size]<br/>
+		<img src="<?echo $ts_img[2]?>"/></a>
 		
 		<br/>.<br/>.<br/>
-		[size=7][url=<?echo $ts_link[0]?>]<?echo $ts_jdl[0]?>[/url][/size]<br/>
-		<img src="<?echo $ts_img[0]?>"/></a>
+		[size=7][url=<?echo $ts_link[3]?>]<?echo $ts_jdl[3]?>[/url][/size]<br/>
+		<img src="<?echo $ts_img[3]?>"/></a>
 		
 <script>		
 var answers = [
