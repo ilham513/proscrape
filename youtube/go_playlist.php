@@ -51,7 +51,7 @@ foreach($ts->find('img') as $element) {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
-		<h2><img src="https://bantuan.kaskus.co.id/hc/article_attachments/115007021608/smilies_fb5ly1j43vv5.gif"/>[size=7] -=- Harus Baca Ini Juga! =-= [/size]<img src="https://bantuan.kaskus.co.id/hc/article_attachments/115007021608/smilies_fb5ly1j43vv5.gif"/></h2>
+		<center><img src="https://bantuan.kaskus.co.id/hc/article_attachments/115007021608/smilies_fb5ly1j43vv5.gif"/>[size=7] -=- Harus Baca Ini Juga! =-= [/size]<img src="https://bantuan.kaskus.co.id/hc/article_attachments/115007021608/smilies_fb5ly1j43vv5.gif"/></center>
 		
 		<br/>.<br/>.<br/>
 		[size=7][url=<?echo $ts_link[0]?>]<?echo $ts_jdl[0]?>[/url][/size]<br/>
