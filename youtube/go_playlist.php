@@ -22,6 +22,7 @@ echo "<p><center><img src='https://i.ytimg.com/vi/". substr($xml->entry->id,9) .
   
 //echo pembuka
 echo "<h2 color='green' id='pembuka'></h2><br/>";
+echo "<div id='baconIpsumOutput'></div>";
 echo "<p>Langsung aja ya, sesuai judul saya akan membagian seperti yang di bawah ini: </p><br/><br/>";
 
 foreach($xml->entry as $entry){
@@ -69,14 +70,28 @@ foreach($ts->find('img') as $element) {
 		[size=7][url=<?echo $ts_link[3]?>]<?echo $ts_jdl[3]?>[/url][/size]<br/>
 		<img src="<?echo $ts_img[3]?>"/></a>
 		
-<script>		
+<script>
+$(document).ready(function() 
+{
+	$.getJSON('https://baconipsum.com/api/?callback=?', 
+		{ 'type':'meat-and-filler', 'start-with-lorem':'1', 'paras':'1' }, 
+		function(baconGoodness)
+	{
+		if (baconGoodness && baconGoodness.length > 0)
+		{
+			$("#baconIpsumOutput").html('');
+			for (var i = 0; i < baconGoodness.length; i++)
+				$("#baconIpsumOutput").append('[spoiler=PENGLARIS]<p>' + baconGoodness[i] + '</p>[/spoiler]');
+		}
+	});
+});
+		
 var answers = [
   "Hey para Kaskuser, Selamat datang di Threat Saya yang sederhana dan menawan ini. Jika kalian terhibur jangan lupa kasih CENDOL dan SHARE ke teman kalian. Terima Kasih ^_^",
   "Hey para Kaskuser, Selamat datang di Threat Saya yang Good Joss dan menawan ini. Jika kalian terhibur jangan lupa kasih CENDOL dan SHARE ke teman kalian. Terima Kasih ^_^",
   "Howdy para Kaskuser, Selamat datang di Threat Ane yang Simple dan menawan ini. Jika kalian terhibur jangan lupa kasih CENDOL dan SHARE ke Friend kalian. Terima Kasih ^_^",
   "Howdy para Kaskuser, Selamat datang di Threat Saya yang sederhana dan menawan ini. Jika kalian terhibur jangan lupa kasih CENDOL dan SHARE ke teman kalian. Terima Kasih ^_^",
   "Hello para Kaskuser, Selamat datang di Threat Aku yang sederhana dan menawan ini. Jika kalian terhibur jangan lupa kasih CENDOL dan SHARE ke teman kalian. Terima Kasih ^_^",
-  "Wotcha",
   "Alright para Kaskuser, Selamat datang di Threat Saya yang sederhana dan menawan ini. Jika kalian terhibur jangan lupa kasih CENDOL dan SHARE ke teman kalian. Terima Kasih ^_^",
   "Alright para Kaskuser, Welcome to my Threat yang sederhana dan menawan ini. Jika kalian terhibur jangan lupa kasih CENDOL dan SHARE ke teman kalian. Terima Kasih ^_^"
 ]
