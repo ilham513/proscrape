@@ -29,6 +29,7 @@ foreach($xml->entry as $entry){
 	$i += 1;
 	$title = str_replace(" | Klip Anime Lucu (Link di Deskripsi)","",$entry->title);
 	$title = str_replace(" Klip Anime Sub Indo Link di Deskripsi","",$title);
+	$title = str_replace(" Klip Anime Sub Indo (Link di Deskripsi)","",$title);
 	echo "<br/><br/><strong>$i. " . $title . "</strong>"; 
 	echo "<p><center> [youtube]". substr($entry->id,9) ."[/youtube] <br/>Sumber Youtube.com</center> </p><br/><br/>";
 }
