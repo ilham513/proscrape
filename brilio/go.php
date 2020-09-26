@@ -65,7 +65,7 @@ foreach($main->find('img') as $element) {
 	$(function() {
 	  $("img.lazy").each(function() {
 		var src = $(this).attr('src');
-		var a = $('<a/>').attr('href', 'https://www.youtube.com/watch?v=4uJIu4E1V0Q');
+		var a = $('<a/>').attr('href', 'https://www.youtube.com/watch?v=4uJIu4E1V0Q&list=PLLxox3eMAPrlRbyZdO0wfRG0PVNVja00u');
 		$(this).wrap(a);
 	  });
 	});
