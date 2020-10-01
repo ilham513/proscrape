@@ -2,6 +2,11 @@
 $url = $_GET['url'];
 // echo $url;
 
+//ambli blog
+$xml = simplexml_load_file("http://isetiabhakti.blogspot.com/atom.xml") or die ("Unable to load XML file!");
+// Ambil Href
+$xml =  $xml ->entry->link[4]->attributes()->href;
+
 include_once('../simple_html_dom.php');
 $html = file_get_html($url);
 // echo $html;
@@ -65,7 +70,7 @@ foreach($main->find('img') as $element) {
 	$(function() {
 	  $("img.lazy").each(function() {
 		var src = $(this).attr('src');
-		var a = $('<a/>').attr('href', 'https://www.youtube.com/watch?v=4uJIu4E1V0Q&list=PLLxox3eMAPrlRbyZdO0wfRG0PVNVja00u');
+		var a = $('<a/>').attr('href', '<?echo $xml?>');
 		$(this).wrap(a);
 	  });
 	});
@@ -81,7 +86,7 @@ foreach($main->find('img') as $element) {
 	// Usage!
 	sleep(500).then(() => {
 		//x[2].src = 'https://i.postimg.cc/C1ZyRJSk/image.png';
-		x[n].src = 'https://i.postimg.cc/CM2R3pYr/image.png';
+		x[n].src = 'https://i.postimg.cc/zDLrc2nh/image.png';
 		
 	});
 	
