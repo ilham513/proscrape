@@ -21,7 +21,7 @@
   <body class="text-center">	
 	<div class="container">
 	  <div class="row">
-		<div class="col-md-4" style="height: 255px;text-align: left;overflow: auto;font-size: 24px;">
+		<div class="col-md-4" style="height: 355px;text-align: left;overflow: auto;font-size: 24px;">
 	    <?
 			$url = "https://www.brilio.net/ngakak/";
 			$html = file_get_html($url);
@@ -45,17 +45,18 @@
 			  <p class="mt-5 mb-3 text-muted">&copy; 2020 by ilham513</p>
 			  </form>
 		</div>
-		<div class="col-md-4" style="height: 255px;text-align: left;overflow: auto;font-size: 24px;">
+		<div class="col-md-4" style="height: 355px;text-align: left;overflow: auto;font-size: 24px;">
 	    <?
-			$url = "https://www.brilio.net/selebritis/";
+			$url = "https://ngakakonline.id/";
 			$html = file_get_html($url);
 			// echo $html;die();
-
+			
 			foreach($html->find('a') as $element) {
-				$element->href = "go.php?url=https://www.brilio.net".$element->href;
+				$element->href = "go2.php?url=".$element->href;
 			}
 
-			foreach($html->find('a[target=_self]') as $element) {
+
+			foreach($html->find('h3.g1-delta.g1-delta-1st.entry-title') as $element) {
 				echo $element."<hr/>";
 			}
 		?>
