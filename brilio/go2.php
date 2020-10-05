@@ -71,7 +71,7 @@ $main->find('div > p', -3)->outertext = '';
 
 	// Usage!
 	sleep(500).then(() => {
-		x[n].src = 'https://i.postimg.cc/zDLrc2nh/image.png';
+		//x[n].src = 'https://i.postimg.cc/zDLrc2nh/image.png';
 	});
 	
 	$('img').removeAttr('width').removeAttr('height');

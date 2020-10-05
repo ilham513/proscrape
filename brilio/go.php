@@ -86,7 +86,7 @@ foreach($main->find('img') as $element) {
 	// Usage!
 	sleep(500).then(() => {
 		//x[2].src = 'https://i.postimg.cc/C1ZyRJSk/image.png';
-		x[n].src = 'https://i.postimg.cc/zDLrc2nh/image.png';
+		//x[n].src = 'https://i.postimg.cc/zDLrc2nh/image.png';
 		
 	});
 	
