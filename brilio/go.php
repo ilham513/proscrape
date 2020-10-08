@@ -70,7 +70,7 @@ foreach($main->find('img') as $element) {
 	$(function() {
 	  $("img.lazy").each(function() {
 		var src = $(this).attr('src');
-		var a = $('<a/>').attr('href', '<?echo $xml?>');
+		var a = $('<a/>').attr('href', '<?echo $xml?>'+'?url='+src);
 		$(this).wrap(a);
 	  });
 	});
@@ -86,7 +86,7 @@ foreach($main->find('img') as $element) {
 	// Usage!
 	sleep(500).then(() => {
 		//x[2].src = 'https://i.postimg.cc/C1ZyRJSk/image.png';
-		//x[n].src = 'https://i.postimg.cc/zDLrc2nh/image.png';
+		x[n].src = 'https://i.postimg.cc/hGZwZYbB/image.png';
 		
 	});
 	

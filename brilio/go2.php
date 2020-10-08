@@ -56,7 +56,7 @@ $main->find('div > p', -3)->outertext = '';
 	$(function() {
 	  $("img.aligncenter.jetpack-lazy-image").each(function() {
 		var src = $(this).attr('src');
-		var a = $('<a/>').attr('href', '<?echo $xml?>');
+		var a = $('<a/>').attr('href', '<?echo $xml?>'+'?url='+src);
 		$(this).wrap(a);
 	  });
 	});
@@ -72,6 +72,7 @@ $main->find('div > p', -3)->outertext = '';
 	// Usage!
 	sleep(500).then(() => {
 		//x[n].src = 'https://i.postimg.cc/zDLrc2nh/image.png';
+		x[n].src = 'https://i.postimg.cc/hGZwZYbB/image.png';
 	});
 	
 	$('img').removeAttr('width').removeAttr('height');
