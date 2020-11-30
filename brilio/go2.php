@@ -51,12 +51,12 @@ $main->find('div > p', -3)->outertext = '';
 
 
 	<script>
-	$( "img.aligncenter.jetpack-lazy-image" ).wrap( "<center></center>" );
+	// $( "img.aligncenter.jetpack-lazy-image" ).wrap( "<center></center>" );
 	
 	$(function() {
 	  $("img.aligncenter.jetpack-lazy-image").each(function() {
 		var src = $(this).attr('src');
-		var a = $('<a/>').attr('href', '<?echo $xml?>'+'?url='+src);
+		var a = $('<a/>').attr('href', '<?echo $xml?>'+'?fly='+src);
 		$(this).wrap(a);
 	  });
 	});
