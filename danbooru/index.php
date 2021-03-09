@@ -26,6 +26,9 @@
 	    <?
 			$url = "https://danbooru.donmai.us/explore/posts/popular?date=".date("Y-m-d",strtotime("-1 days"));
 			
+			
+			
+			//PAGENITION ATAS
 			if(isset($_GET['page'])){
 				$p = $_GET['page'];
 				
@@ -38,58 +41,56 @@
 				}
 			}
 			
+			
+			
+			
+			//// MULAI DOM
 			$html = file_get_html($url);
 			// echo $html;die(); //TESTTEST TEST TEST
 
-			foreach($html->find('a') as $element) {
-				if( substr($element->href,0,7) == '/posts/' ){
-					
-					// echo $element; die(); //TEST TEST TEST
-					
-					
-					//filter varibel
-					$url_post_prefix = $element->href; //ok
-					$url_post_original = 'https://danbooru.donmai.us'.$url_post_prefix; 
-					$url_post_scraping = 'go.php?url='.$url_post_original; 
-					
-					
-					$gambar_post = $element->children(0)->children(2)->src; //ok
-					
-					
-					## FILTER ##
-					//filter server luar
-					$gambar_post_filter = 'https://imagex.aratech.co/?url='.	str_replace	(	array("https://","http://")	,	""	,	$gambar_post	);
-					
-					//filter server dalam
-					// $gambar_post_filter = 'https://dl.kaskus.id/'.	str_replace	(	array("https://","http://")	,	""	,	$gambar_post	);
-					## FILTER END ##
-					
-					$img_title = $element->children(0)->children(2)->title; #alt text
-					
-					
-					#echo $gambar_post."<hr/>";
-					?>
-					<div class="w3-card-4 <? if(strpos($img_title, 'animated')){echo 'w3-black';} ?>">
+			// MULAI DOM LOOP
+			foreach($html->find('article') as $i=>$element) {
+				
+				//inisiasi data
+				$url_post_id = $element->getAttribute('data-id');
+				$gambar_post = $element->getAttribute('data-large-file-url');
+				$gambar_tags = $element->getAttribute('data-tags');
+				
+				//filter varibel url
+				$url_post_original = 'https://danbooru.donmai.us/post/'.$url_post_id; 
+				$url_post_scraping = 'go.php?url='.$url_post_original; 
+				
+				//filter variabel gambar_post
+				//jika gambar animated
+				if(strpos($gambar_tags, 'animated')){$gambar_post = $element->getAttribute('data-preview-file-url');}
+				$gambar_post_filter = 'https://imagex.aratech.co/?url='.	str_replace	(	array("https://","http://")	,	""	,	$gambar_post	); ##SERVER ARATECH
+				//$gambar_post_filter = 'https://dl.kaskus.id/'.	str_replace	(	array("https://","http://")	,	""	,	$gambar_post	); #SERVER KASKUS - Disabled
+
+				
+				
+				?>
+					<div class="w3-card-4 <? if(strpos($gambar_tags, 'animated')){echo 'w3-black';} ?>">
 						<div>
-							<a href="<?echo $url_post_scraping?>"><img id="566" src="<? echo $gambar_post_filter ?>" class="w3-image w3-margin-top" loading=”lazy” width="80%"></a>
+							<img src="<? echo $gambar_post_filter ?>" id="<? echo $i; ?>" class="w3-image w3-margin-top" loading=”lazy” width="80%" onclick="onClick(this)">
 							<br/>
 							
-							<p><? echo $img_title ?></p>
+							<p><? echo $gambar_tags ?></p>
 
 							<div class="w3-row w3-margin-right">
 							  <div class="w3-col s6 w3-container">
-								<a href="#"><button  type="button" class="w3-padding-16 w3-margin w3-button w3-theme-d1 w3-margin-bottom w3-large w3-red w3-block"><i class="fa fa-times"></i> Hard</button></a>
+								<a href="inject/tampung-sementara.php?url=<? echo $gambar_post ?>&tipe=hard&callback=<? echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]%23$i" ?>"><button  type="button" class="w3-padding-16 w3-margin w3-button w3-theme-d1 w3-margin-bottom w3-large w3-red w3-block"><i class="fa fa-times"></i> Hard</button></a>
 							  </div>
 							  <div class="w3-col s6 w3-container">
-								<a href="like.php?id=566&page="><button  type="button" class="w3-padding-16 w3-margin w3-button w3-theme-d1 w3-margin-bottom w3-large w3-green w3-block"><i class="fa fa-check"></i> Soft</button></a>
+								<a href="inject/tampung-sementara.php?url=<? echo $gambar_post ?>&tipe=soft&callback=<? echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]%23$i" ?>"><button  type="button" class="w3-padding-16 w3-margin w3-button w3-theme-d1 w3-margin-bottom w3-large w3-green w3-block"><i class="fa fa-check"></i> Soft</button></a>
 							  </div>
 							</div>							
 						</div>
 					</div>
 					<hr/>
-					<?
-				}
+				<?
 			}
+			
+			
 		?>
 
 		
@@ -97,6 +98,7 @@
 		
 		
 		<?
+		//PAGENITION BAWAH
 		if(!isset($_GET['page'])){
 			$p = 1;
 		}
@@ -104,7 +106,25 @@
 		<a href="?page=<? echo ($p+1); ?>"><button class="w3-padding-16 w3-margin w3-button w3-theme-d1 w3-margin-left w3-large w3-blue">Selanjutnya</button></a>
 </div>
 </body>
+
+<!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-small w3-black w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  
 <script>
 //$("p:contains(animated)").css("background-color", "yellow");
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
 </script>
 </html>
