@@ -26,7 +26,7 @@ if ($conn->query($sql) === TRUE) {
 } else {
   echo "Error: " . $sql . "<hr><h1>" . $conn->error . "</h1><hr>";
   echo '
-<p>You will be redirected in <span id="counter">10</span> second(s).</p>
+<p>You will be redirected in <span id="counter">10</span> second(s). <a href=" '.$callback.' ">Or Click Here</a></p>
 <script type="text/javascript">
 function countdown() {
     var i = document.getElementById("counter");

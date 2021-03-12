@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-<title>Danbooru Proscrape</title>
+<title>Hinata Proscrape</title>
 <meta charset="UTF-8">
 <link rel="icon" href="https://i.imgur.com/0GsEGfN.png" type="image/gif" sizes="192x192">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,7 +27,7 @@
 <div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
 
 	    <?
-			$url = "https://danbooru.donmai.us/explore/posts/popular?date=".date("Y-m-d",strtotime("-1 days"));
+			$url = "https://danbooru.donmai.us/posts?tags=naruto_%28series%29";
 			
 			
 			
@@ -82,11 +82,8 @@
 							</p>
 
 							<div class="w3-row w3-margin-right">
-							  <div class="w3-col s6 w3-container">
-								<a href="http://hinata18.is-best.net/inject/tampung-sementara.php?url=<? echo $gambar_post ?>&tipe=hard&callback=<? echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]%23$i" ?>"><button  type="button" class="w3-padding-16 w3-margin w3-button w3-theme-d1 w3-margin-bottom w3-large w3-red w3-block"><i class="fa fa-times"></i> Hard</button></a>
-							  </div>
-							  <div class="w3-col s6 w3-container">
-								<a href="http://hinata18.is-best.net/inject/tampung-sementara.php?url=<? echo $gambar_post ?>&tipe=soft&callback=<? echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]%23$i" ?>"><button  type="button" class="w3-padding-16 w3-margin w3-button w3-theme-d1 w3-margin-bottom w3-large w3-green w3-block"><i class="fa fa-check"></i> Soft</button></a>
+							  <div class="w3-col s12 w3-container">
+								<a href="http://hinata18.is-best.net/inject/tampung-sementara.php?url=<? echo $gambar_post ?>&tipe=hinata&callback=<? echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]%23$i" ?>"><button  type="button" class="w3-padding-16 w3-margin w3-button w3-theme-d1 w3-margin-bottom w3-large w3-purple w3-block"><i class="fa fa-check"></i> Hinata</button></a>
 							  </div>
 							</div>							
 						</div>
@@ -98,6 +95,7 @@
 			
 		?>
 
+		
 		
 		
 		
