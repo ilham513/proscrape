@@ -18,7 +18,8 @@
 <body bgcolor="white">
 <div class="w3-container">
 	<div class="w3-bar w3-black">
-	  <a href="index.php"><button class="w3-button w3-left">Bebas</button></a>
+	  <a href="index.php"><button class="w3-button w3-left">Populer</button></a>
+	  <a href="complete.php"><button class="w3-button w3-right">CompleteN</button></a>
 	  <a href="hinata.php"><button class="w3-button w3-right">Hinata</button></a>
 	</div>
 </div>

@@ -28,7 +28,7 @@
 <div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
 
 	    <?
-			$url = "https://danbooru.donmai.us/explore/posts/popular?date=".date("Y-m-d",strtotime("-1 days"));
+			$url = "https://danbooru.donmai.us/posts?tags=completely_nude+";
 			
 			
 			
@@ -75,7 +75,7 @@
 				?>
 					<div class="w3-card-4 <? if(strpos($gambar_tags, 'animated')){echo 'w3-black';} ?>">
 						<div>
-							<img src="<? echo $gambar_post_filter ?>" id="<? echo $i; ?>" class="w3-image w3-margin-top" loading=â€lazyâ€ width="80%" onclick="onClick(this)">
+							<img src="<? echo $gambar_post_filter ?>" id="<? echo $i; ?>" class="w3-image w3-margin-top" loading=hlazyh width="80%" onclick="onClick(this)">
 							<br/>
 							
 							<p>
