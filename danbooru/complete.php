@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-<title>Danbooru Proscrape</title>
+<title>Complete N</title>
 <meta charset="UTF-8">
 <link rel="icon" href="https://i.imgur.com/0GsEGfN.png" type="image/gif" sizes="192x192">
 <meta name="viewport" content="width=device-width, initial-scale=1">
