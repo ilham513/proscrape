@@ -14,7 +14,7 @@
 <div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
 
 	<?
-		$url = "https://minioppai.org/";
+		$url = "https://haho.moe/";
 		if(isset($_GET['url'])){
 			$url = $_GET['url'];
 			if(substr($url,0,13) == 'https://drive'){
@@ -26,19 +26,10 @@
 		//// MULAI DOM
 		$html = file_get_html($url);
 		
-		//remove iklan
-		foreach($html ->find('#floatcenter') as $item) {
-			$item->outertext = '';
-		}
 
 		//remove script
 		foreach($html ->find('script') as $item) {
 			$item->outertext = '';
-		}
-		
-		//anti lazyload
-		foreach($html->find('img') as $element) {
-			$element->src = $element->getAttribute('data-src');
 		}
 
 
@@ -46,4 +37,4 @@
 			$item->href = 'index.php?url='.$item->href;
 		}
 
-		echo( $html );die(); //TESTTEST TEST TEST
+		echo( $html->find('main')[0] );die(); //TESTTEST TEST TEST
