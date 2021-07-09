@@ -25,21 +25,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!-- First Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <a href="popular.php"><img src="https://imagex.aratech.co/?url=danbooru.donmai.us/data/sample/dc/2e/sample-dc2edc325106a9adc86e8a0d343ae339.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
+      <a href="popular.php" target="_blank"><img src="https://imagex.aratech.co/?url=danbooru.donmai.us/data/sample/dc/2e/sample-dc2edc325106a9adc86e8a0d343ae339.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
       <div class="w3-container w3-white">
         <p><a href="popular.php"><b>Popular</b></a></p>
         <p>Yang lagi populer di danbooru.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <a href="fate.php"><img src="https://res.cloudinary.com/jbr-foundation/image/upload/v1625664452/o4gv2ob6e5jtelzbxfri.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <a href="fate.php" target="_blank"><img src="https://res.cloudinary.com/jbr-foundation/image/upload/v1625664452/o4gv2ob6e5jtelzbxfri.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Fate</b></p></a>
         <p>Lewd Fate Series.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <a href="genshin.php"><img src="https://i.postimg.cc/9M306SXb/image.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <a href="genshin.php" target="_blank"><img src="https://i.postimg.cc/9M306SXb/image.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Genshin</b></p></a>
         <p>Genshin Impact.</p>
@@ -51,10 +51,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!-- Second Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <a href="gotobun.php" target="_blank"><img src="https://res.cloudinary.com/jbr-foundation/image/upload/v1625836712/mkygd0b5dldfdig8q9sr.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p><b>Gotobun</b></p></a>
+        <p>Nakano Miku dan Nino.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">

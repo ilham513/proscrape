@@ -35,12 +35,13 @@ foreach($html->find('span[class=thumb]') as $i=>$element) {
 	<script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
 </head>
 
-<body bgcolor="white">
-	<div class="w3-content w3-center w3-padding-large w3-margin-top" id="portfolio">
+<body>
+<main>
+	<div class="w3-card-4 w3-center w3-padding-large w3-margin-top" id="portfolio">
 	<?php foreach($array_url as $i=>$url): ?>
 		<?php $callback = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";?>
 		<?php $token = base64_encode($array_link[$i]);?>
-		<a href="rule34_filter.php?callback=<?=$callback?>&token=<?=$token ?>"><img src="<?= $url ?>"/></a>
+		<a href="rule34_filter.php?callback=<?=$callback?>&token=<?=$token ?>"><img src="<?= "//imagex.aratech.co/?url=" . str_replace("https://","",$url) . "&w=150&h=150&t=square" ?>"/></a>
 	<?php endforeach; ?>
 	</div>
 	
@@ -51,6 +52,7 @@ foreach($html->find('span[class=thumb]') as $i=>$element) {
 	</div>
 	
 	<hr/>
+</main>
 </body>
 
 <!-- Modal for full size images on click-->

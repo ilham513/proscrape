@@ -1,14 +1,14 @@
 <?php
 include_once('../simple_html_dom.php');
 
-$url = "https://rule34.xxx/index.php?page=post&s=list&tags=fate_%28series%29";
+$url = "https://rule34.xxx/index.php?page=post&s=list&tags=go-toubun_no_hanayome";
 
 if(isset($_GET['p'])){
-	$url = "https://rule34.xxx/index.php?page=post&s=list&tags=fate_%28series%29&pid=". $_GET['p'] * 42;
+	$url = $url . "&pid=". $_GET['p'] * 42;
 }
 
 //// MULAI DOM
-$html = file_get_html($url); #echo $html;die(); //TESTTEST TEST TEST
+$html = file_get_html($url); #echo $url;die(); //TESTTEST TEST TEST
 
 //PENETRAL PAGE
 if(!isset($_GET['p'])){$_GET['p'] = 0;}
@@ -24,7 +24,7 @@ foreach($html->find('span[class=thumb]') as $i=>$element) {
 <html lang="en">
 
 <head>
-	<title>Fate</title>
+	<title>Gotobun</title>
 	<meta charset="UTF-8">
 	<link rel="icon" href="https://i.imgur.com/0GsEGfN.png" type="image/gif" sizes="192x192">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,8 +35,9 @@ foreach($html->find('span[class=thumb]') as $i=>$element) {
 	<script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
 </head>
 
-<body bgcolor="white">
-	<div class="w3-center w3-padding-large w3-margin-top" id="portfolio">
+<body>
+<main>
+	<div class="w3-card-4 w3-center w3-padding-large w3-margin-top" id="portfolio">
 	<?php foreach($array_url as $i=>$url): ?>
 		<?php $callback = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";?>
 		<?php $token = base64_encode($array_link[$i]);?>
@@ -47,10 +48,11 @@ foreach($html->find('span[class=thumb]') as $i=>$element) {
 	<hr/>
 	
 	<div class="w3-container">
-		<a href="fate.php?p=<?= $_GET['p'] + 1 ?>"><button class="w3-button w3-block w3-large w3-teal">NEXT</button></a>
+		<a href="?p=<?= $_GET['p'] + 1 ?>"><button class="w3-button w3-block w3-large w3-teal">NEXT</button></a>
 	</div>
 	
 	<hr/>
+</main>
 </body>
 
 <!-- Modal for full size images on click-->
