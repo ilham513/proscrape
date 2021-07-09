@@ -32,17 +32,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <a href="fate.php"><img src="https://res.cloudinary.com/jbr-foundation/image/upload/v1625664452/o4gv2ob6e5jtelzbxfri.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p><b>Fate</b></p></a>
+        <p>Lewd Fate Series.</p>
       </div>
     </div>
-    <div class="w3-third w3-container">
-      <img src="https://www.w3schools.com/w3images/nature.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="genshin.php"><img src="https://i.postimg.cc/9M306SXb/image.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p><b>Genshin</b></p></a>
+        <p>Genshin Impact.</p>
       </div>
     </div>
   </div>
