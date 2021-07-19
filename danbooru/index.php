@@ -32,6 +32,25 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
+      <a href="naruto.php" target="_blank"><img src="https://i.postimg.cc/nMbn63Zx/image.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Naruto</b></p></a>
+        <p>Hinata, Sakura, Tsunade, Dll.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="gotobun.php" target="_blank"><img src="https://res.cloudinary.com/jbr-foundation/image/upload/v1625836712/mkygd0b5dldfdig8q9sr.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Gotobun</b></p></a>
+        <p>Nakano Miku dan Nino.</p>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
       <a href="fate.php" target="_blank"><img src="https://res.cloudinary.com/jbr-foundation/image/upload/v1625664452/o4gv2ob6e5jtelzbxfri.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Fate</b></p></a>
@@ -43,25 +62,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <div class="w3-container w3-white">
         <p><b>Genshin</b></p></a>
         <p>Genshin Impact.</p>
-      </div>
-    </div>
-  </div>
-  
-  
-  <!-- Second Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <a href="gotobun.php" target="_blank"><img src="https://res.cloudinary.com/jbr-foundation/image/upload/v1625836712/mkygd0b5dldfdig8q9sr.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Gotobun</b></p></a>
-        <p>Nakano Miku dan Nino.</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
     <div class="w3-third w3-container">
