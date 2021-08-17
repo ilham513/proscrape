@@ -1,4 +1,4 @@
-<title>TES</title>
+<title>TES 2</title>
 <?php
 
 $curl = curl_init();
@@ -14,7 +14,7 @@ curl_setopt_array($curl, array(
   CURLOPT_CUSTOMREQUEST => 'POST',
   CURLOPT_POSTFIELDS => array('image' => 'https://i.imgur.com/ExTjGWo.png'),
   CURLOPT_HTTPHEADER => array(
-    'Authorization: Client-ID {b5cffa381ffa5de}'
+    'Authorization: Client-ID b5cffa381ffa5de'
   ),
 ));
 
