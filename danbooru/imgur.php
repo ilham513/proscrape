@@ -1,4 +1,4 @@
-<title>TES 4</title>
+<title>TES 5</title>
 
 <?php
 
@@ -15,7 +15,6 @@ curl_setopt_array($curl, array(
   CURLOPT_CUSTOMREQUEST => 'POST',
   CURLOPT_POSTFIELDS => array('image' => 'https://i.imgur.com/ExTjGWo.png'),
   CURLOPT_HTTPHEADER => array(
-    'Authorization: Client-ID d717b9131b6e4f9',
     'Authorization: Bearer d24eb52f12aef66d483b019b106e62cc6fa121f1'
   ),
 ));
