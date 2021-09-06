@@ -1,7 +1,7 @@
 <title>IMGUR UPLOAD FULL</title>
 
 <?php
-$url = $urldecode($_GET['url']);
+$url = urldecode($_GET['url']);
 echo $url;die();
 
 $curl = curl_init();
