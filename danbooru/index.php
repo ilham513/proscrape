@@ -25,7 +25,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!-- First Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <a href="popular.php" target="_blank"><img src="https://imagex.aratech.co/?url=danbooru.donmai.us/data/sample/dc/2e/sample-dc2edc325106a9adc86e8a0d343ae339.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
+      <a href="popular_a.php" target="_blank"><img src="https://imagex.aratech.co/?url=danbooru.donmai.us/data/sample/dc/2e/sample-dc2edc325106a9adc86e8a0d343ae339.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
       <div class="w3-container w3-white">
         <p><a href="popular.php"><b>Popular</b></a></p>
         <p>Yang lagi populer di danbooru.</p>
