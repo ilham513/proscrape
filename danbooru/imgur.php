@@ -1,6 +1,7 @@
-<title>IMGUR UPLOAD</title>
+<title>IMGUR UPLOAD FULL</title>
 
 <?php
+url = $urldecode($_GET['url']);
 
 $curl = curl_init();
 
@@ -13,7 +14,7 @@ curl_setopt_array($curl, array(
   CURLOPT_FOLLOWLOCATION => true,
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => 'POST',
-  CURLOPT_POSTFIELDS => array('image' => 'https://i.imgur.com/ExTjGWo.png'),
+  CURLOPT_POSTFIELDS => array('image' => "$url"),
   CURLOPT_HTTPHEADER => array(
     'Authorization: Client-ID b5cffa381ffa5de'
   ),
