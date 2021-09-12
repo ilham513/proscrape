@@ -1,22 +1,30 @@
 <?php
 include_once('../simple_html_dom.php');
 
-//url
-$url = "https://danbooru.donmai.us/posts?page=3&tags=saenai_heroine_no_sodatekata+";
 
-//ambil query
-$qry = (parse_url($url, PHP_URL_QUERY));
-//parse string
-parse_str($qry, $output);
-//output
-#var_dump($output);
+// //ambil query
+// $qry = (parse_url($_GET['url'], PHP_URL_QUERY));
+// //parse string
+// parse_str($qry, $output);
+// //output
+// var_dump($output);
+
+
+//url
+if(!isset($_GET['p'])){$_GET['p']=1;}
+$_GET['url'] = preg_replace('/\s+/', '', $_GET['url']);
+$url = $_GET['url']."&page=".$_GET['p'];
+// echo($url);
 
 //html
 $html = file_get_html($url);
 
 // MULAI DOM LOOP
 foreach($html->find('article') as $i=>$element) {
-	$rows[] = $element->getAttribute('data-preview-file-url');
+	$row["url"] = $element->getAttribute('data-large-file-url');
+	$row["id"] = preg_replace('/[^0-9]/', '', $element->getAttribute('id'));
+	
+	$rows[] = $row;
 }
 
 //Columns must be a factor of 12 (1,2,3,4,6,12)
@@ -38,12 +46,14 @@ $bootstrapColWidth = 12 / $numOfCols;
 			<?php if($rowCount % $numOfCols == 0){echo '<div class="w3-row w3-center">'."\n";} ?>
 			<?php $rowCount++; ?>
 			<div class="w3-col w3-card w3-container s<?= $bootstrapColWidth ?>">
-				<?= "\t <img id='".$i."' class='w3-image' src='https://imagex.aratech.co/?url=".str_replace("https://","",$row)."&w=130&h=130&t=square'/> \n\t" ?>
+				<a href="http://doujinshi18.is-best.net/imgur.php?url=<?= urlencode($row['url']) ?>&id=<?= $row['id'] ?>&p=<?= $_GET['p'] ?>&callback=<?= $_GET['url'] ?>">
+					<img id="<?= $row["id"] ?>" class="w3-image" src="https://imagex.aratech.co/?url=<?= str_replace("https://","",$row["url"]) ?>&w=800&h=800&t=square"/>
+				</a>
 			</div>
 			<?php if($rowCount % $numOfCols == 0){echo '</div>'."\n";} ?>
 		<?php endforeach; ?>
-		<hr/>
-		<button class="w3-button w3-block w3-teal w3-large">NEXT</button>
+		<hr/><br/>
+		<a href="?p=<?= $_GET['p'] + 1 ?>&url=<?=$_GET['url']?>"><button class="w3-button w3-block w3-teal w3-large">NEXT</button></a>
 		<hr/>
 	</div>
 </body>

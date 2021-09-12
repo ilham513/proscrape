@@ -20,11 +20,11 @@
 	</div>
 	<!-- Tabs -->
 	<div class="w3-container">
-		<form>
+		<form action="explore-go.php" method="GET">
 		<h3>Travel the Danbooru with us...</h3>
-		<div class="w3-row-padding" style="margin:0 -16px;">
+		<div class="w3-container w3-row-padding" style="margin:0 -16px;">
 		  <label>URL</label>
-		  <input class="w3-input w3-border" type="text">
+		  <input name="url" class="w3-input w3-border" type="text">
 		</div>
 		<p><button class="w3-button w3-teal">EXPLORE GO</button></p>
 		</form>

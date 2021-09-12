@@ -32,10 +32,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <a href="naruto.php" target="_blank"><img src="https://i.postimg.cc/nMbn63Zx/image.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <a href="explore.php" target="_blank"><img src="https://i.postimg.cc/nMbn63Zx/image.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b>Naruto</b></p></a>
-        <p>Hinata, Sakura, Tsunade, Dll.</p>
+        <p><b>Explore</b></p></a>
+        <p>Telusurin Danbooru.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
