@@ -22,6 +22,12 @@ $html = file_get_html($url);
 // MULAI DOM LOOP
 foreach($html->find('article') as $i=>$element) {
 	$row["url"] = $element->getAttribute('data-large-file-url');
+	
+	if(strpos($element->getAttribute('data-tags'), 'animated')){
+		// continue;
+		$row["url"]= $element->getAttribute('data-preview-file-url');
+	}	
+	
 	$row["id"] = preg_replace('/[^0-9]/', '', $element->getAttribute('id'));
 	
 	$rows[] = $row;
