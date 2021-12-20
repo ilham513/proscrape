@@ -24,7 +24,7 @@
 		$url = "https://danbooru.donmai.us/explore/posts/popular?date=".date("Y-m-d",strtotime("-1 days"))."&page=".$_GET['p'];		
 				
 		$html = file_get_html($url);
-		// echo $html;die(); //TESTTEST TEST TEST
+		echo $html;die(); //TESTTEST TEST TEST
 		
 		foreach($html->find('article') as $i=>$element) {
 			$gambar["url"] = $element->getAttribute('data-large-file-url');
