@@ -43,7 +43,7 @@
 			
 			//// MULAI DOM
 			$html = file_get_html($url);
-			// echo $html;die(); //TESTTEST TEST TEST
+			echo $html;die(); //TESTTEST TEST TEST
 
 			// MULAI DOM LOOP
 			foreach($html->find('article') as $i=>$element) {
