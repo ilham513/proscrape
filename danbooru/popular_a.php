@@ -27,7 +27,7 @@
 		// echo $html;die(); //TESTTEST TEST TEST
 		
 		foreach($html->find('article') as $i=>$element) {
-			$gambar["url"] = $element->children(0);
+			$gambar["url"] = $element->children(0)->children(0)->children(0)->children(1)->getAttribute('src');
 			$gambar["id"]= $element->getAttribute('data-id');
 			
 			if(strpos($element->getAttribute('data-tags'), 'animated')){
