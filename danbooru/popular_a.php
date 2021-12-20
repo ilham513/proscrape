@@ -27,7 +27,7 @@
 		// echo $html;die(); //TESTTEST TEST TEST
 		
 		foreach($html->find('article') as $i=>$element) {
-			$gambar["url"] = $element->children(0)->children(0)->children(0)->children(1)->getAttribute('src');
+			$gambar["url"] = $element->children(0);
 			$gambar["id"]= $element->getAttribute('data-id');
 			
 			if(strpos($element->getAttribute('data-tags'), 'animated')){
@@ -38,7 +38,7 @@
 			$array_gambar[] = $gambar;
 		}
 		
-		var_dump($array_gambar);die();
+		print_r($array_gambar);die();
 	?>
 	
 <?php foreach($array_gambar as $gambar): ?>
