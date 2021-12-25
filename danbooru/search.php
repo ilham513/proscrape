@@ -56,7 +56,7 @@
 				<?php $rowCount++; ?>
 				<div id="<?= $i ?>" class="w3-col w3-display-container w3-card s<?= $bootstrapColWidth ?>">
 					<!-- danbooru_id, callback_id, callback_page -->
-					<a href="danbooru_filter.php?danbooru_id=<?=$gambar['id']?>&callback_dir=search&callback_q=<?= $_GET['q']?>&callback_id=<?= $i?>&callback_p=<?= $_GET['p']?>"><img src="<?=$gambar['url']?>"/></a>
+					<a href="danbooru_filter.php?danbooru_id=<?=$gambar['id']?>&callback_dir=search&callback_q=<?= $_GET['q']?>&callback_id=<?= $i?>&callback_p=<?= $_GET['p']?>"><img src="//imagex.aratech.co/?url=<?= str_replace("https://", "", $gambar['url'])?>"/></a>
 				</div>
 				<?php if($rowCount % $numOfCols == 0){echo '</div>'."\n";} ?>
 			<?php endforeach; ?>
