@@ -16,8 +16,6 @@
 
 
 <body>
-	<?php include_once("inc_navbar.php"); ?>
-
 	<div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
 	<?php
 		//page controller
@@ -42,26 +40,21 @@
 		
 		// var_dump($array_gambar);die();
 	?>
-
-		<?php
-		//Columns must be a factor of 12 (1,2,3,4,6,12)
-		$numOfCols = 2;
-		$rowCount = 0;
-		$bootstrapColWidth = 12 / $numOfCols;	
-		
-		?>
-		<div class="w3-container">
-			<?php foreach($array_gambar as $i=>$gambar): ?>
-				<?php if($rowCount % $numOfCols == 0){echo '<div class="w3-row w3-center">'."\n";} ?>
-				<?php $rowCount++; ?>
-				<div id="<?= $i ?>" class="w3-col w3-display-container w3-card s<?= $bootstrapColWidth ?>">
-					<!-- danbooru_id, callback_id, callback_page -->
-					<a href="danbooru_filter.php?danbooru_id=<?=$gambar['id']?>&callback_dir=index&callback_id=<?= $i?>&callback_p=<?= $_GET['p']?>"><img src="<?=$gambar['url']?>"/></a>
-				</div>
-				<?php if($rowCount % $numOfCols == 0){echo '</div>'."\n";} ?>
-			<?php endforeach; ?>
+	
+<?php foreach($array_gambar as $gambar): ?>
+		<hr/>
+		<div class="w3-card-4">
+			<div class="w3-center w3-display-container">
+				<!-- Konten -->
+				<img id="<?= $gambar['id'] ?>" onclick="onClick(this)" class="w3-image" src="//imagex.aratech.co/?url=<?= str_replace("https://", "", $gambar['url'])?>"/>
+			</div>
+			<div class="w3-container">
+				<hr/>
+				<a style="text-decoration: none;" href="http://doujinshi18.is-best.net/imgur.php?url=<?= urlencode($gambar['url']) ?>&id=<?= $gambar['id'] ?>&p=<?= $_GET['p'] ?>"><button class="w3-btn w3-block w3-large w3-teal">GASKEUN</button></a>
+				<hr/>
+			</div>
 		</div>
-
+<?php endforeach; ?>
 
 		<hr/>
 		

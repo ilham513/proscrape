@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-	<title>Popular</title>
+	<title>Search</title>
 	<meta charset="UTF-8">
 	<link rel="icon" href="https://i.imgur.com/0GsEGfN.png" type="image/gif" sizes="192x192">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,18 +16,20 @@
 
 
 <body>
+	<?php include_once("inc_navbar.php"); ?>
+
 	<div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
 	<?php
 		//page controller
 		if(!isset($_GET['p'])){$_GET['p'] = 1;}
 
-		$url = "https://danbooru.donmai.us/explore/posts/popular?date=".date("Y-m-d",strtotime("-1 days"))."&page=".$_GET['p'];		
+		$url = "https://danbooru.donmai.us/posts?tags=".$_GET['q']."&page=".$_GET['p'];		
 				
 		$html = file_get_html($url);
 		// echo $html;die(); //TESTTEST TEST TEST
 		
 		foreach($html->find('article') as $i=>$element) {
-			$gambar["url"] = $element->children(0);
+			$gambar["url"] = $element->find("img", 0)->getAttribute('src');
 			$gambar["id"]= $element->getAttribute('data-id');
 			
 			if(strpos($element->getAttribute('data-tags'), 'animated')){
@@ -38,27 +40,32 @@
 			$array_gambar[] = $gambar;
 		}
 		
-		print_r($array_gambar);die();
+		// var_dump($array_gambar);die();
 	?>
-	
-<?php foreach($array_gambar as $gambar): ?>
-		<hr/>
-		<div class="w3-card-4">
-			<div class="w3-center w3-display-container">
-				<!-- Konten -->
-				<img id="<?= $gambar['id'] ?>" onclick="onClick(this)" class="w3-image" src="//imagex.aratech.co/?url=<?= str_replace("https://", "", $gambar['url'])?>"/>
-			</div>
-			<div class="w3-container">
-				<hr/>
-				<a style="text-decoration: none;" href="http://doujinshi18.is-best.net/imgur.php?url=<?= urlencode($gambar['url']) ?>&id=<?= $gambar['id'] ?>&p=<?= $_GET['p'] ?>"><button class="w3-btn w3-block w3-large w3-teal">GASKEUN</button></a>
-				<hr/>
-			</div>
+
+		<?php
+		//Columns must be a factor of 12 (1,2,3,4,6,12)
+		$numOfCols = 2;
+		$rowCount = 0;
+		$bootstrapColWidth = 12 / $numOfCols;	
+		
+		?>
+		<div class="w3-container">
+			<?php foreach($array_gambar as $i=>$gambar): ?>
+				<?php if($rowCount % $numOfCols == 0){echo '<div class="w3-row w3-center">'."\n";} ?>
+				<?php $rowCount++; ?>
+				<div id="<?= $i ?>" class="w3-col w3-display-container w3-card s<?= $bootstrapColWidth ?>">
+					<!-- danbooru_id, callback_id, callback_page -->
+					<a href="danbooru_filter.php?danbooru_id=<?=$gambar['id']?>&callback_dir=search&callback_q=<?= $_GET['q']?>&callback_id=<?= $i?>&callback_p=<?= $_GET['p']?>"><img src="<?=$gambar['url']?>"/></a>
+				</div>
+				<?php if($rowCount % $numOfCols == 0){echo '</div>'."\n";} ?>
+			<?php endforeach; ?>
 		</div>
-<?php endforeach; ?>
+
 
 		<hr/>
 		
-		<a style="text-decoration: none;" href="?p=<?= $_GET['p'] + 1 ?>"><button class=" w3-xlarge w3-btn w3-block w3-blue">NEXT ></button></a>
+		<a style="text-decoration: none;" href="?q=<?= $_GET['q'] ?>&p=<?= $_GET['p'] + 1 ?>"><button class=" w3-xlarge w3-btn w3-block w3-blue">NEXT ></button></a>
 		
 		<hr/>
 	</div>
