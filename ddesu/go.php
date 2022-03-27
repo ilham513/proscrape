@@ -14,6 +14,6 @@
 <!-- /wp:buttons -->
 
 <!-- wp:paragraph -->
-<p><h4>Binggung? <span style="text-decoration:underline;"><a href="https://komikanime18.wordpress.com/cara-download/">Baca Panduan Download</a></span></h4></p>
+<p><i>Binggung? <span style="text-decoration:underline;"><a href="https://komikanime18.wordpress.com/cara-download/">Baca Panduan Download</a></span></i></p>
 <!-- /wp:paragraph -->
 </textarea>
