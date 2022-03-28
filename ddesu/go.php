@@ -9,7 +9,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"width":100,"align":"center","className":"is-style-fill"} -->
-<div class="wp-block-button aligncenter has-custom-width wp-block-button__width-100 is-style-fill"><a class="wp-block-button__link" href="http://ouo.io/qs/wPpb4LHb?s=<?= $_POST['link'] ?>" target="_blank" rel="noreferrer noopener">Download PDF</a></div>
+<div class="wp-block-button aligncenter has-custom-width wp-block-button__width-100 is-style-fill"><a class="wp-block-button__link" href="<?= $_POST['link'] ?>" target="_blank" rel="noreferrer noopener">Download PDF</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
